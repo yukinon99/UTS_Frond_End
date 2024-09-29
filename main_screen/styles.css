@@ -1,0 +1,246 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    flex: 1;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Header style */
+header {
+    background: #fff;
+    color: #000;
+    padding: 1rem 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.top-bar {
+    background: #f0f0f0;
+    text-align: center;
+    padding: 0.5rem 0;
+    font-size: 0.9rem;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    flex: 1;
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #00aaff;
+}
+
+header nav {
+    flex: 2;
+    text-align: center;
+    /* Center the nav */
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header .icons {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header .icons a {
+    margin-left: 1rem;
+    color: #000;
+    text-decoration: none;
+}
+
+header .icons i {
+    font-size: 1.2rem;
+}
+
+/* icon container */
+.icon-wrapper {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+/* tooltip hidden by default */
+.tooltip {
+    visibility: hidden;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    padding: 5px;
+    position: absolute;
+    bottom: 150%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 1;
+}
+
+/* show tooltip on hover */
+.icon-wrapper:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+.hero {
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 7rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Tambahkan ini untuk mengatur posisi relatif */
+}
+
+.hero h2 {
+    color: #00aaff; /* Ubah warna font h2 menjadi biru */
+}
+
+.hero p {
+    color: #00aaff;
+}
+
+.slider {
+    position: relative;
+    max-width: 100%;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    justify-content: center; /* Posisikan gambar di tengah */
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center; /* Posisikan gambar di tengah */
+}
+
+.slide img {
+    width: 100%; /* Perpanjang gambar agar lebih besar */
+    max-width: 800px; /* Batasi lebar maksimal gambar */
+    height: auto; /* Mengatur tinggi otomatis */
+    border-radius: 10px; /* Opsional: untuk membuat sudut gambar melengkung */
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    user-select: none;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Tambahkan background semi-transparan */
+    border-radius: 50%; /* Buat tombol berbentuk lingkaran */
+    opacity: 0; /* Sembunyikan tombol secara default */
+    visibility: hidden; /* Sembunyikan tombol secara default */
+}
+
+.slider:hover .prev, .slider:hover .next {
+    opacity: 1; /* Tampilkan tombol saat hover */
+    visibility: visible; /* Tampilkan tombol saat hover */
+}
+
+.prev {
+    left: 10px; /* Posisikan di dalam gambar di sisi kiri */
+}
+
+.next {
+    right: 10px; /* Posisikan di dalam gambar di sisi kanan */
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.btn.shop-now {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: #00aaff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn.shop-now:hover {
+    background-color: #0088cc;
+}
+
+footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Opsional: untuk membuat sudut gambar melengkung */
+}

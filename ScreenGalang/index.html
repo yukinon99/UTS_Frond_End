@@ -37,7 +37,7 @@
         <!-- Content Overlay (Investors Button) -->
         <div class="content-overlay">
             <h1>GelSound</h1>
-            <button>Learn More</button>
+            <button id="learnMoreBtn">Learn More</button>
         </div>
     </div>
 
@@ -45,6 +45,12 @@
     <footer>
         <p>&copy; 2024 GelSound. All Rights Reserved.</p>
     </footer>
+
+    <script>
+        document.getElementById('learnMoreBtn').addEventListener('click', function() {
+            window.location.href = '/main_screen/main.html'; // Perubahan di sini
+        });
+    </script>
 
 </body>
 </html>
