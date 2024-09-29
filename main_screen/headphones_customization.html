@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customize Your Headphones</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="top-bar">
+            <p><i class="fa-solid fa-bullhorn"></i> Quick! Don’t Miss Our Deals of the Week</p>
+        </div>
+        <div class="container">
+            <div class="logo">
+                <h1>GelSond</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="main.html#new-releases">New Releases</a></li>
+                    <li><a href="headphones_customization.html">Headphones</a></li>
+                    <li><a href="main.html#earbuds">Earbuds</a></li>
+                    <li><a href="main.html#speakers">Speakers</a></li>
+                    <li><a href="main.html#open-ear-earbuds">Open-Ear Earbuds</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Customization Section -->
+    <section id="customize-headphones" class="container">
+        <h2>Customize Your Headphones</h2>
+        <p>Choose your headphone model and customize it to fit your style.</p>
+
+        <div class="headphone-gallery"></div>
+        <h3>Select Headphone Model:</h3>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="images/headset.jpg" alt="Headphone 1" style="width: 200px;">
+                <p>GelSound 1 - $199.99</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/headset2.jpg" alt="Headphone 2" style="width: 200px;">
+                <p>GelSound 2 - $299.99</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/headset3.jpg" alt="Headphone 3" style="width: 200px;">
+                <p>GelSound 1 Pro - $249.99</p>
+            </div>
+        </div>
+        </div>
+
+        <div class="customization-options">
+            <h3>Select Headphone:</h3>
+            <select id="headphone-model">
+                <option value="headphone1">GelSound 1 - $199.99</option>
+                <option value="headphone2">GelSound 2 - $299.99</option>
+                <option value="headphone3">GelSound 1 Pro - $249.99</option>
+            </select>
+
+            <h3>Select Color:</h3>
+            <select id="headphone-color">
+                <option value="black">Black</option>
+                <option value="white">White</option>
+                <option value="red">Red</option>
+            </select>
+
+            <h3>Rating:</h3>
+            <p id="headphone-rating">★★★★☆</p>
+
+            <button onclick="saveCustomization()">Save Customization</button>
+        </div>
+
+        <div id="saved-message"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 GelSond. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

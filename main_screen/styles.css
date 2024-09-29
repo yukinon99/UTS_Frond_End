@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
     height: 100%;
     margin: 0;
     padding: 0;
@@ -134,11 +135,13 @@ header .icons i {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: relative; /* Tambahkan ini untuk mengatur posisi relatif */
+    position: relative;
+    /* Tambahkan ini untuk mengatur posisi relatif */
 }
 
 .hero h2 {
-    color: #00aaff; /* Ubah warna font h2 menjadi biru */
+    color: #00aaff;
+    /* Ubah warna font h2 menjadi biru */
 }
 
 .hero p {
@@ -154,7 +157,8 @@ header .icons i {
 
 .slides {
     display: flex;
-    justify-content: center; /* Posisikan gambar di tengah */
+    justify-content: center;
+    /* Posisikan gambar di tengah */
     transition: transform 0.5s ease-in-out;
 }
 
@@ -162,17 +166,23 @@ header .icons i {
     min-width: 100%;
     box-sizing: border-box;
     display: flex;
-    justify-content: center; /* Posisikan gambar di tengah */
+    justify-content: center;
+    /* Posisikan gambar di tengah */
 }
 
 .slide img {
-    width: 100%; /* Perpanjang gambar agar lebih besar */
-    max-width: 800px; /* Batasi lebar maksimal gambar */
-    height: auto; /* Mengatur tinggi otomatis */
-    border-radius: 10px; /* Opsional: untuk membuat sudut gambar melengkung */
+    width: 100%;
+    /* Perpanjang gambar agar lebih besar */
+    max-width: 800px;
+    /* Batasi lebar maksimal gambar */
+    height: auto;
+    /* Mengatur tinggi otomatis */
+    border-radius: 10px;
+    /* Opsional: untuk membuat sudut gambar melengkung */
 }
 
-.prev, .next {
+.prev,
+.next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -184,26 +194,36 @@ header .icons i {
     transition: 0.6s ease;
     user-select: none;
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5); /* Tambahkan background semi-transparan */
-    border-radius: 50%; /* Buat tombol berbentuk lingkaran */
-    opacity: 0; /* Sembunyikan tombol secara default */
-    visibility: hidden; /* Sembunyikan tombol secara default */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Tambahkan background semi-transparan */
+    border-radius: 50%;
+    /* Buat tombol berbentuk lingkaran */
+    opacity: 0;
+    /* Sembunyikan tombol secara default */
+    visibility: hidden;
+    /* Sembunyikan tombol secara default */
 }
 
-.slider:hover .prev, .slider:hover .next {
-    opacity: 1; /* Tampilkan tombol saat hover */
-    visibility: visible; /* Tampilkan tombol saat hover */
+.slider:hover .prev,
+.slider:hover .next {
+    opacity: 1;
+    /* Tampilkan tombol saat hover */
+    visibility: visible;
+    /* Tampilkan tombol saat hover */
 }
 
 .prev {
-    left: 10px; /* Posisikan di dalam gambar di sisi kiri */
+    left: 10px;
+    /* Posisikan di dalam gambar di sisi kiri */
 }
 
 .next {
-    right: 10px; /* Posisikan di dalam gambar di sisi kanan */
+    right: 10px;
+    /* Posisikan di dalam gambar di sisi kanan */
 }
 
-.prev:hover, .next:hover {
+.prev:hover,
+.next:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -242,5 +262,129 @@ footer {
 .image-container img {
     max-width: 100%;
     height: auto;
-    border-radius: 10px; /* Opsional: untuk membuat sudut gambar melengkung */
+    border-radius: 10px;
+    /* Opsional: untuk membuat sudut gambar melengkung */
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#headphone-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#headphone-rating {
+    color: gold;
+    margin-bottom: 10px;
+}
+
+#headphone-price {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#headphone-description {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+#headphonesButton {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#headphonesButton:hover {
+    background-color: #0056b3;
+}
+
+/* Modal styles for headphone details */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 100;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Black with opacity */
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#headphone-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#headphone-rating {
+    color: gold;
+    margin-bottom: 10px;
+}
+
+#headphone-price {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#headphone-description {
+    font-size: 16px;
+    margin-top: 10px;
 }
