@@ -29,6 +29,89 @@ body, html {
     z-index: -1;
 }
 
+/* About Section */
+.about-section {
+    background-color: #000000f0;
+    padding: 60px 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-content {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    gap: 30px;
+    align-items: center;
+}
+
+/* Updated About Text Styles */
+.about-text {
+    flex: 2;
+    color: #cfc2c2;
+    text-align: left;
+    opacity: 0; /* Make it hidden initially */
+    transition: opacity 0.6s ease-out; /* Smooth opacity transition */
+}
+
+/* Define the keyframes for the entrance animation */
+@keyframes slideInUp {
+    0% {
+        transform: translateY(20px); /* Start 20px below */
+        opacity: 0; /* Start transparent */
+    }
+    100% {
+        transform: translateY(0); /* End in original position */
+        opacity: 1; /* End fully visible */
+    }
+}
+
+/* Class to trigger the animation */
+.animate {
+    animation: slideInUp 0.6s ease-out forwards; /* Animation settings */
+}
+
+/* Headphone Image */
+.about-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.image-container {
+    background-color: #FF7200;
+    padding: 30px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    top: -20px; /* Slight lift to match the effect */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.about-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 1.2rem;
+    color: #999;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Smooth scrolling for in-page navigation */
+html {
+    scroll-behavior: smooth;
+}
+
 /* Header with NavBar */
 header {
     position: absolute;
@@ -76,7 +159,7 @@ nav a:hover {
 
 .content-overlay button {
     padding: 15px 30px;
-    background-color: #FF7200; /* McLaren Orange */
+    background-color: #FF7200;
     border: none;
     color: white;
     font-size: 18px;
@@ -86,6 +169,10 @@ nav a:hover {
 
 .content-overlay button:hover {
     background-color: #e56300;
+}
+.text {
+    color: #FF7200; /* Change this to your desired color */
+    display: inline; /* Ensure it behaves inline with the rest of the text */
 }
 
 /* Footer */
