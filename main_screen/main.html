@@ -1,91 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GelSond</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-
 <body>
-    <!-- Header -->
-    <header>
-        <div class="top-bar">
-            <p><i class="fa-solid fa-bullhorn"></i> Quick! Don’t Miss Our Deals of the Week</p>
+    <section id="header">
+        <a href="#">GelSond</a>
+
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="main.html">Home</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </div>
-        <div class="container">
-            <div class="logo">
-                <h1>GelSond</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="main.html#new-releases">New Releases</a></li>
-                    <li><a href="headphones_customization.html">Headset</a></li> <!-- Link diubah di sini -->
-                    <li><a href="main.html#earbuds">Earbuds</a></li>
-                    <li><a href="main.html#speakers">Speakers</a></li>
-                    <li><a href="main.html#open-ear-earbuds">Open-Ear Earbuds</a></li>
-                </ul>
-            </nav>
-            <!-- modified icons with tooltips-->
-            <div class="icons">
-                <a href="#search" class="icon-wrapper">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <span class="tooltip">Search</span>
-                </a>
-                <a href="#notifications" class="icon-wrapper">
-                    <i class="fa-solid fa-bell"></i>
-                    <span class="tooltip">Notifications</span>
-                </a>
-            </div>
-        </div>
-    </header>
+    </section>
 
+    <section id="hero">
+        <h4>Hi</h4>
+        <h2>Welcome to GelSond</h2>
+        <h1>Ready to dive in</h1>
+        <p>you can customize and search based what you like!!</p>
+    </section>
 
-    </div>
-    </div>
-
-
-    </div>
-    </div>
-
-    <!-- Content -->
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="text-overlay">
-                <h2>Welcome to GelSond</h2>
-                <p>Experience the best sound quality with our products.</p>
-            </div>
-            <!-- Tambahkan slider gambar di sini -->
-            <div class="slider">
-                <div class="slides">
-                    <div class="slide"><img src="images/headset.jpg" alt="Headset"></div>
-                    <div class="slide"><img src="images/headset2.jpg" alt="Headset 2"></div>
-                    <div class="slide"><img src="images/headset3.jpg" alt="Headset 3"></div>
-                </div>
-                <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
-                <button class="next" onclick="plusSlides(1)">&#10095;</button>
-                <a href="#products" class="btn shop-now">Shop Now</a>
-            </div>
-            <div class="additional-images"></div>
-                <img src="images/1.jpeg" alt="Image 1"> <!-- Gambar 1 -->
-                <img src="images/2.jpeg" alt="Image 2"> <!-- Gambar 2 -->
-                <img src="images/3.jpeg" alt="Image 3"> <!-- Gambar 3 -->
-                <img src="images/4.jpeg" alt="Image 4"> <!-- Gambar 4 -->
+    <section id="search">
+        <div class="wrapper">
+            <div id="search-container">
+                <input type="search"
+                id="search-input"
+                placeholder="Search product name here.."/>
+                <button id="search"><i class="fa-solid fa-magnifying-glass"></i></button>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2023 GelSond. All rights reserved.</p>
-        </div>
-    </footer>
-
     <script src="main.js"></script>
-
 </body>
-
 </html>
