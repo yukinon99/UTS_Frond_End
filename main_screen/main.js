@@ -15,12 +15,6 @@ document.querySelectorAll('.icon-wrapper').forEach(icon => {
     });
 });
 
-//Berganti web
-document.getElementById('accountButton').addEventListener('click', function (event) {
-    event.preventDefault(); // Mencegah aksi default
-    window.location.href = '/user/user.html'; // Pindah halaman ke user.html
-});
-
 //Untuk berganti gambar
 let slideIndex = 1;
 showSlides(slideIndex);
@@ -35,15 +29,15 @@ function showSlides(n) {
     }
     slides[slideIndex - 1].style.display = "block";
 }
-
 function plusSlides(n) {
     showSlides(slideIndex += n);
 }
-
 // Ganti gambar secara otomatis setiap 15 detik
 setInterval(function () {
     plusSlides(1);
 }, 15000);
+
+
 const headphoneData = {
     headphone1: {
         title: 'gelsound 1',
