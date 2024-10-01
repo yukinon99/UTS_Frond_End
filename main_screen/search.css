@@ -8,7 +8,7 @@
   }
   
   body {
-    background-color: #f5f8ff;
+    background-color: #FF7200;
   }
   
   .wrapper {
@@ -34,8 +34,8 @@
   #search-container button {
     padding: 1em 2em;
     margin-left: 1em;
-    background-color: #6759ff;
-    color: #ffffff;
+    background-color: #FF7200;
+    color: #100e0e;
     border-radius: 5px;
     margin-top: 0.5em;
   }
@@ -50,27 +50,27 @@
   #filters select {
     padding: 1em;
     background-color: transparent;
-    border: 2px solid #6759ff;
-    color: #6759ff;
+    border: 2px solid #FF7200;
+    color: #FF7200;
     border-radius: 3em;
     cursor: pointer;
   }
   
   #filters select:focus {
-    border-color: #6759ff;
+    border-color: #FF7200;
   }
   
   .button-value {
-    border: 2px solid #6759ff;
+    border: 2px solid #FF7200;
     padding: 1em 2.2em;
     border-radius: 3em;
     background-color: transparent;
-    color: #6759ff;
+    color: #FF7200;
     cursor: pointer;
   }
   
   .active {
-    background-color: #6759ff;
+    background-color: #FF7200;
     color: #ffffff;
   }
   
