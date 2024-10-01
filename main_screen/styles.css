@@ -324,7 +324,7 @@ input[type="search"] {
 }
 
 footer.section-1 {
-    background-color: #f4f4f4;
+    background-color: #060606eb;
     /* Adjust this to fit your design */
     padding: 20px;
 }
@@ -345,6 +345,7 @@ footer .col {
 }
 
 footer .icon {
+    color: #FF7200;
     margin-top: 10px;
 }
 
