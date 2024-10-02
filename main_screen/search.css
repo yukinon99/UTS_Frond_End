@@ -28,14 +28,14 @@
   }
   
   #search-container input:focus {
-    border-bottom-color: #6759ff;
+    border-bottom-color: #1b1a19;
   }
   
   #search-container button {
     padding: 1em 2em;
     margin-left: 1em;
-    background-color: #FF7200;
-    color: #100e0e;
+    background-color: #0e0b09;
+    color: #FF7200;
     border-radius: 5px;
     margin-top: 0.5em;
   }
@@ -50,27 +50,27 @@
   #filters select {
     padding: 1em;
     background-color: transparent;
-    border: 2px solid #FF7200;
-    color: #FF7200;
+    border: 2px solid #030302;
+    color: #0e0e0d;
     border-radius: 3em;
     cursor: pointer;
   }
   
   #filters select:focus {
-    border-color: #FF7200;
+    border-color: #000000;
   }
   
   .button-value {
-    border: 2px solid #FF7200;
+    border: 2px solid #010101;
     padding: 1em 2.2em;
     border-radius: 3em;
     background-color: transparent;
-    color: #FF7200;
+    color: #0e0d0d;
     cursor: pointer;
   }
   
   .active {
-    background-color: #FF7200;
+    background-color: #020202;
     color: #ffffff;
   }
   

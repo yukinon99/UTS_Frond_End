@@ -1,14 +1,14 @@
 let products = {
     data: [
       {
-        productName: "Pro Gaming Headset",
+        productName: "Sony WR-300",
         category: "Gaming",
         price: 120,
         brand: "Sony",
         image: "images/Sony1.png",
       },
       {
-        productName: "Casual Wireless Headphones",
+        productName: "Sony23-9",
         category: "Casual",
         price: 60,
         brand: "HyperX",
