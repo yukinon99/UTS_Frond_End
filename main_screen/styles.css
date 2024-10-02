@@ -11,6 +11,7 @@ h1 {
     font-size: 50px;
     line-height: 64px;
     color: #222;
+    margin-left: 50%; 
 }
 
 h2 {
@@ -32,6 +33,7 @@ p {
     font-size: 16px;
     color: #222;
     margin: 15px 0 20px 0;
+    margin-left: 50%; 
 }
 
 .section-p1 {
@@ -109,7 +111,7 @@ html {
 
 /*  Hero */
 #hero {
-    background-image: url("images/headset.jpg");
+    background-image: url("images/model3.jpg");
     background-size: cover;
     padding: 0 80px;
     height: 90vh;
@@ -122,10 +124,12 @@ html {
 
 #hero h4 {
     padding-bottom: 15px;
+    margin-left: 50%;   
 }
 
 #hero h2 {
     color: #FF7200;
+    margin-left: 50%; 
 }
 
 /*Search-section*/
@@ -262,6 +266,7 @@ input[type="search"] {
 }
 
 
+
 .content .name {
     font-size: 40px;
     text-transform: uppercase;
@@ -324,7 +329,7 @@ input[type="search"] {
 }
 
 footer.section-1 {
-    background-color: #060606eb;
+    background-color: #f9f8f8eb;
     /* Adjust this to fit your design */
     padding: 20px;
 }

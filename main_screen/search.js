@@ -15,14 +15,14 @@ let products = {
         image: "images/Sony1.png",
       },
       {
-        productName: "Sport Earbuds",
+        productName: "JBL",
         category: "Sports",
         price: 85,
         brand: "Bose",
         image: "images/Sony1.png",
       },
       {
-        productName: "Gaming Headphones",
+        productName: "JBL",
         category: "Gaming",
         price: 150,
         brand: "Razer",
@@ -137,6 +137,8 @@ let products = {
         cards[index].classList.add("hide");
       }
     });
+
+    
   
     // Show or hide the "No results found" message
     let visibleCards = document.querySelectorAll(".card:not(.hide)");

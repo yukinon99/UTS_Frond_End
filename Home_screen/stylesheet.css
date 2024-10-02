@@ -125,10 +125,20 @@ header {
     z-index: 1;
 }
 
+
 header .logo {
     color: rgb(255, 255, 255);
     font-size: 24px;
     font-weight: bold;
+}
+.logo img {
+    height: 15vh; /* Adjust the height according to your logo */
+    width: 20vh;  /* This keeps the aspect ratio of the image */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
 }
 
 nav a {
