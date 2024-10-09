@@ -1,16 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300&display=swap');
+
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    border: none;
-    outline: none;
-    font-family: "Poppins", sans-serif;
-  }
+    font-family: 'League Spartan', sans-serif;
+}
   
   body {
     background-color: #e8e4e0;
   }
 
+  /* HEADER */
   #header {
     display: flex;
     align-items: center;
@@ -30,6 +31,13 @@
     font-size: 16px;
     font-weight: 600;
     color: #ffffff;
+}
+
+#header a img {
+  width: 83px;
+  height: 80px;
+  margin-left: 100;
+  padding-left: 0;
 }
 
 #navbar {
@@ -68,7 +76,7 @@
     left: 20px;
 }
   
-
+/* SEARCH*/
   .wrapper {
     width: 95%;
     margin: 0 auto;
@@ -98,7 +106,7 @@
     margin-top: 0.5em;
   }
   
-  /* Dropdown Filter Styles */
+  /* FILTER */
   #filters {
     display: flex;
     gap: 1em;
