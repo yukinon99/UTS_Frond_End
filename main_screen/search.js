@@ -1,28 +1,28 @@
 let products = {
     data: [
       {
-        productName: "Pro Gaming Headset",
+        productName: "Sony WR-300",
         category: "Gaming",
         price: 120,
         brand: "Sony",
         image: "images/Sony1.png",
       },
       {
-        productName: "Casual Wireless Headphones",
+        productName: "Sony23-9",
         category: "Casual",
         price: 60,
         brand: "HyperX",
         image: "images/Sony1.png",
       },
       {
-        productName: "Sport Earbuds",
+        productName: "JBL",
         category: "Sports",
         price: 85,
         brand: "Bose",
         image: "images/Sony1.png",
       },
       {
-        productName: "Gaming Headphones",
+        productName: "JBL",
         category: "Gaming",
         price: 150,
         brand: "Razer",
@@ -137,6 +137,8 @@ let products = {
         cards[index].classList.add("hide");
       }
     });
+
+    
   
     // Show or hide the "No results found" message
     let visibleCards = document.querySelectorAll(".card:not(.hide)");

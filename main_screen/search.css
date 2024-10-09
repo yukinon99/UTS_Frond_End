@@ -8,14 +8,72 @@
   }
   
   body {
-    background-color: #FF7200;
+    background-color: #e8e4e0;
   }
+
+  #header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: #161616;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+
+}
+
+#header a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    transition: 0..3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: #FF7200;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #FF7200;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
   
+
   .wrapper {
     width: 95%;
     margin: 0 auto;
   }
-  
+
   #search-container {
     margin: 1em 0;
   }
@@ -28,14 +86,14 @@
   }
   
   #search-container input:focus {
-    border-bottom-color: #6759ff;
+    border-bottom-color: #1b1a19;
   }
   
   #search-container button {
     padding: 1em 2em;
     margin-left: 1em;
-    background-color: #FF7200;
-    color: #100e0e;
+    background-color: #0e0b09;
+    color: #FF7200;
     border-radius: 5px;
     margin-top: 0.5em;
   }
@@ -50,30 +108,31 @@
   #filters select {
     padding: 1em;
     background-color: transparent;
-    border: 2px solid #FF7200;
-    color: #FF7200;
+    border: 2px solid #030302;
+    color: #0e0e0d;
     border-radius: 3em;
     cursor: pointer;
   }
   
   #filters select:focus {
-    border-color: #FF7200;
+    border-color: #000000;
   }
   
   .button-value {
-    border: 2px solid #FF7200;
+    border: 2px solid #010101;
     padding: 1em 2.2em;
     border-radius: 3em;
     background-color: transparent;
-    color: #FF7200;
+    color: #0e0d0d;
     cursor: pointer;
   }
   
   .active {
-    background-color: #FF7200;
+    background-color: #020202;
     color: #ffffff;
   }
   
+
   #products {
     display: grid;
     grid-template-columns: auto auto auto;

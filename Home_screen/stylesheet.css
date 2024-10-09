@@ -47,24 +47,24 @@ body, html {
     align-items: center;
 }
 
-/* About Text */
+/* About Text */ 
 .about-text {
     flex: 2;
     color: #cfc2c2;
     text-align: left;
-    opacity: 0; /* Initially hidden */
-    transition: opacity 0.30s ease-out; /* Smooth opacity change */
+    opacity: 0; /*awalnya hidden */
+    transition: opacity 0.30s ease-out; /* Smooth ganti oppacity  */
 }
 
-/* Keyframes for the entrance animation */
+/* Keyframes for the entrance animation */ /*gatau si ini gimana pokoknya keyframes*/
 @keyframes slideInUp {
     0% {
-        transform: translateY(20px); /* Start 20px below */
-        opacity: 0; /* Start transparent */
+        transform: translateY(20px);
+        opacity: 0;
     }
     100% {
-        transform: translateY(0); /* End in original position */
-        opacity: 1; /* End fully visible */
+        transform: translateY(0); 
+        opacity: 1; 
     }
 }
 
@@ -91,7 +91,7 @@ body, html {
     max-width: 100%;
     height: auto;
     position: relative;
-    top: -20px; /* Slight lift to match the effect */
+    top: -20px; 
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
@@ -107,7 +107,7 @@ body, html {
     margin-bottom: 15px;
 }
 
-/* Smooth scrolling for in-page navigation */
+/* Biar scrollnya smoooth kali */
 html {
     scroll-behavior: smooth;
 }
@@ -118,17 +118,27 @@ header {
     top: 0;
     width: 100%;
     display: flex;
-    justify-content: center; /* Center the logo */
+    justify-content: center;
     align-items: center;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.5); /* Transparent Black */
+    background-color: rgba(0, 0, 0, 0.5); /* warnanya item transpaarant yeah */
     z-index: 1;
 }
+
 
 header .logo {
     color: rgb(255, 255, 255);
     font-size: 24px;
     font-weight: bold;
+}
+.logo img {
+    height: 15vh; /* Adjust the height according to your logo */
+    width: 20vh;  /* This keeps the aspect ratio of the image */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
 }
 
 nav a {
@@ -143,7 +153,7 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/* Content Overlay on Video */
+/* Content Overlay di Video */
 .content-overlay {
     position: absolute;
     top: 50%;
@@ -174,8 +184,8 @@ nav a:hover {
 }
 
 .text {
-    color: #FF7200; /* Change this to your desired color */
-    display: inline; /* Ensure it behaves inline with the rest of the text */
+    color: #FF7200; 
+    display: inline; 
 }
 
 /* Footer */
