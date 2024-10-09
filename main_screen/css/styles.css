@@ -24,11 +24,6 @@ h4 {
     color: #222;
 }
 
-h6 {
-    font-weight: 20px;
-    font-size: 12px;
-}
-
 p {
     font-size: 16px;
     color: #222;
@@ -56,7 +51,10 @@ html {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 80px;
+    padding-right: 75px;
+    padding-left: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     background: #161616;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
     z-index: 999;
@@ -140,10 +138,44 @@ html {
     margin-left: 50%; 
 }
 
-/*Search-section*/
-#search {
-    background-color: #e57819;
-    padding: 10px;
+.arrow {
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    transform: translate(-50%,-50%);
+}
+
+.arrow span {
+    display: block;
+    height: 30px;
+    width: 30px;
+    transform: rotate(45deg);
+    border-bottom: 5px solid orange;
+    border-right: 5px solid orange;
+    margin-top: -10px;
+    animation: scroll 2s infinite;
+}
+
+.arrow span:nth-child(2) {
+    animation-delay: -.2s;
+}
+
+.arrow span:nth-child(3){
+    animation-delay: -.4s;
+}
+
+@keyframes scroll {
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px,-20px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(20px,20px);
+    }
 }
 
 /* Slider */
