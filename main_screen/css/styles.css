@@ -180,13 +180,13 @@ html {
 
 /* Slider */
 #slider {
-    padding-top: 110px;
+    padding-top: 50px;
     padding-bottom: 30px;
     padding-left: 80px;
     padding-right: 80px;
     background: #161616;
     position: relative;
-    height: 110vh;
+    height: 125vh;
 }
 
 /* Corousel */
@@ -265,19 +265,9 @@ html {
     color: #FF7200;
     font-weight: bold;
     line-height: 1;
-
+    text-shadow: 3px 4px 4px #ffffff;
     opacity: 0;
     animation: animate 1s ease-in-out 0.3s 1 forwards;
-}
-
-.content .name{
-    font-size: 100px;
-    text-transform: uppercase;
-    font-weight: bold;
-    line-height: 1;
-    text-shadow: 3px 4px 4px #FF7200;
-    opacity: 0;
-    animation: animate 1s ease-in-out 0.6s 1 forwards;
 }
 
 .content .des{
@@ -285,7 +275,8 @@ html {
     margin-bottom: 20px;
     font-size: 18px;
     margin-left: 5px;
-
+    color: burlywood;
+    font-weight: bold;
     opacity: 0;
     animation: animate 1s ease-in-out 0.9s 1 forwards;
 }
@@ -391,7 +382,7 @@ html {
     height: 4px;
     background-color: #FF7200;
     left: 0;
-    top: 0;
+    bottom: 0;
     animation: runningTime 7s linear 1 forwards;
 }
 
