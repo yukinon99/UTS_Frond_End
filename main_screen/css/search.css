@@ -7,9 +7,9 @@
     font-family: 'League Spartan', sans-serif;
     font-weight: bold;
 }
-  
+
 body {
-    background-color: #e8e4e0;
+    background-color: #000000f1;
 }
 
 /* HEADER */
@@ -21,7 +21,7 @@ body {
     padding-left: 50px;
     padding-top: 10px;
     padding-bottom: 10px;
-    background: #161616;
+    background: #1a1a1a;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
     z-index: 999;
     position: sticky;
@@ -38,8 +38,6 @@ body {
 #header a img {
     width: 83px;
     height: 80px;
-    margin-left: 100;
-    padding-left: 0;
 }
 
 #navbar {
@@ -67,7 +65,7 @@ body {
 }
 
 #navbar li a.active::after,
-#navbar li a:hover::after {
+#navbar li a a:hover::after {
     content: "";
     width: 30%;
     height: 2px;
@@ -94,8 +92,8 @@ body {
 
 #search-container input {
     background-color: transparent;
-    max-width: 600px; /* Set a max width for the search input */
-    width: 100%; /* Allow it to be 100% of the parent width */
+    max-width: 600px;
+    width: 100%;
     border-bottom: 2px solid #110f29;
     padding: 1em 0.3em;
 }
@@ -123,17 +121,39 @@ body {
 }
 
 #filters select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
     padding: 0.8em 1.2em;
-    background-color: transparent;
-    border: 2px solid #030302;
-    color: #0e0e0d;
+    background-color: rgb(1, 1, 1);
+    border: 2px solid #e8e8e7;
+    color: #ebebeb;
     border-radius: 3em;
     cursor: pointer;
     transition: border-color 0.3s ease, background-color 0.3s ease;
+    outline: none;
 }
 
-#filters select:hover {
-    border-color: #333333;
+#filters select:hover,
+#filters select:focus {
+    border-color: #d87905;
+    color: #FF7200;
+    background-color: #000;
+}
+
+#filters select option {
+    background-color: #000;
+    color: #FF7200;
+}
+
+#filters select:focus option {
+    background-color: #000;
+    color: #FF7200;
+}
+
+#filters select option:checked {
+    background-color: #FF7200;
+    color: #000;
 }
 
 .button-value {
@@ -147,7 +167,7 @@ body {
 
 .active {
     background-color: #020202;
-    color: #ffffff;
+    color: #ef9700;
 }
 
 #products {
@@ -155,22 +175,49 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 1.5em;
     padding: 2em 0;
-    max-width: 1200px; /* Adjust this value as needed */
+    max-width: 1200px;
     margin: 0 auto;
     justify-content: center;
 }
 
 .card {
-    background-color: #ffffff;
+    background-color: #171616fa;
     max-width: 18em;
     margin-top: 1em;
     padding: 1em;
     border-radius: 5px;
     box-shadow: 1em 2em 2.5em rgba(1, 2, 68, 0.08);
+    position: relative; /* Added for positioning brand logo */
+    transition: transform 0.3s ease; /* For card animation */
+    overflow: hidden; /* Ensure hidden text doesn't affect layout */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Hover effect */
 }
 
 .image-container {
     text-align: center;
+    position: relative; /* Required for absolute positioning of hidden text */
+}
+
+.image-container .hidden-text {
+    position: absolute; /* Position the hidden text over the image */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    color: #ffffff;
+    display: flex; /* Centering text */
+    align-items: center;
+    justify-content: center;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease; /* Transition for reveal effect */
+}
+
+.image-container:hover .hidden-text {
+    opacity: 1; /* Reveal on hover */
 }
 
 img {
@@ -181,7 +228,19 @@ img {
 
 .container {
     padding-top: 1em;
-    color: #110f29;
+    color: #ffffff; /* Changed to white */
+}
+
+.brand-logo {
+    position: absolute; /* Positioned to the bottom right of the card */
+    bottom: 10px;
+    right: 10px;
+    width: 50px; /* Set a fixed width for the logo */
+}
+
+.brand-logo img {
+    max-width: 100%;
+    height: auto;
 }
 
 .hide {
@@ -204,14 +263,5 @@ img {
     #products {
         grid-template-columns: auto auto;
         grid-column-gap: 1em;
-    }
-
-    #filters {
-        flex-direction: column;
-        gap: 0.5em;
-    }
-
-    #search-container input {
-        width: 100%; /* Adjusted for mobile view */
     }
 }
