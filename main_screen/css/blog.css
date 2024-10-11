@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: #e8e4e0;
+    background-color: rgba(0, 0, 0, 0.912);
 }
 
 
@@ -91,7 +91,7 @@ main.container {
 }
 
 .post {
-    background-color: white;
+    background-color:#171616fa;
     padding: 20px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
@@ -100,6 +100,7 @@ main.container {
 
 .post h2 {
     margin-top: 0;
+    color: wheat;
 }
 
 .article-image {
@@ -117,15 +118,17 @@ main.container {
 .rating,
 .reviews {
     margin-bottom: 5px;
+    color: wheat;
 }
 
 .rating span {
     font-weight: bold;
+    color: wheat;
 }
 
 .sidebar {
     width: 30%;
-    background-color: #fff;
+    background-color: #171616fa;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -133,6 +136,7 @@ main.container {
 
 .sidebar .profile {
     text-align: center;
+    color: wheat;
 }
 
 .sidebar .profile img {
@@ -143,20 +147,23 @@ main.container {
 
 .sidebar h3 {
     margin-top: 20px;
+    color: wheat;
 }
 
 .sidebar ul {
     list-style: none;
     padding: 0;
+    color: wheat;
 }
 
 .sidebar ul li {
     margin-bottom: 10px;
+    color: wheat;
 }
 
 .sidebar ul li a {
     text-decoration: none;
-    color: #333;
+    color: wheat;
 }
 
 footer {
@@ -191,12 +198,12 @@ footer form {
 
 .container__left h1 {
     font-size: 2.5rem;
-    color: var(--primary-color);
+    color: wheat;
     margin-bottom: 1.5rem;
 }
 
 .container__left p {
-    color: var(--text-dark);
+    color: wheat;
     font-size: 1.1rem;
     line-height: 1.8;
     margin-bottom: 1rem;
@@ -236,22 +243,23 @@ footer form {
 
 .card__content {
     flex: 1;
+    color: wheat;
 }
 
 .card__content span i {
     font-size: 2rem;
-    color: var(--primary-color);
+    color: wheat;
 }
 
 .card__details p {
     font-style: italic;
-    color: var(--text-dark);
+    color: wheat;
     font-size: 1rem;
     margin-bottom: 0.8rem;
 }
 
 .card__details h4 {
-    color: var(--primary-color);
+    color: wheat;
     font-size: 1rem;
     font-weight: 500;
     text-align: right;
@@ -297,6 +305,7 @@ footer form {
 
     .card__details h4 {
         text-align: center;
+        color: wheat;
     }
 }
 
@@ -443,7 +452,7 @@ button.like-btn,
 button.dislike-btn {
     background-color: transparent;
     border: none;
-    color: #333;
+    color: wheat;
     font-size: 16px;
     cursor: pointer;
     display: inline-flex;
@@ -482,7 +491,7 @@ button.dislike-btn.active {
 .dislike-count {
     font-size: 14px;
     margin-left: 5px;
-    color: #333;
+    color: wheat;
 }
 
 #menu-bar {
