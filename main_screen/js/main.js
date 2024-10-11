@@ -80,3 +80,12 @@ document.getElementById('hero-arrow').addEventListener('click', function() {
     document.getElementById('slider').scrollIntoView({ behavior: 'smooth' });
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    const menuBar = document.getElementById('menu-bar');
+    const navbar = document.getElementById('navbar');
+
+    menuBar.addEventListener('click', function() {
+        navbar.classList.toggle('active');
+    });
+});
+
