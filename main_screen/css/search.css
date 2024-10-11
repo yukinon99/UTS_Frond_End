@@ -248,6 +248,24 @@ img {
 }
 
 /* Responsive Design */
+@media screen and (max-width: 850px) {
+    #products {
+        grid-template-columns: repeat(3, 1fr); /* Mengatur 3 kolom */
+        grid-column-gap: 1em; /* Jarak antar kolom */
+    }
+
+    img {
+        max-width: 100%;
+        object-fit: contain;
+        height: 10em;
+    }
+
+    .card {
+        max-width: 10em;
+        margin-top: 1em;
+    }
+}
+
 @media screen and (max-width: 720px) {
     img {
         max-width: 100%;
