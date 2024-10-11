@@ -5,48 +5,58 @@ const dislikeCountSpan = document.querySelector('.dislike-count');
 
 let likeCount = 0;
 let dislikeCount = 0;
+let isLiked = false;
+let isDisliked = false;
 
 likeBtn.addEventListener('click', () => {
-    if (likeBtn.classList.contains('active')) {
+    if (isLiked) {
 
         likeBtn.classList.remove('active');
         likeCount--;
+        isLiked = false;
     } else {
+        // If not liked, like the post
         likeBtn.classList.add('active');
         dislikeBtn.classList.remove('active');
-        likeCount++;
-        if (dislikeCount > 0) {
+        if (isDisliked) {
             dislikeCount--;
+            isDisliked = false;
         }
+        likeCount++;
+        isLiked = true;
     }
+
     likeCountSpan.textContent = likeCount;
     dislikeCountSpan.textContent = dislikeCount;
 });
 
 dislikeBtn.addEventListener('click', () => {
-    if (dislikeBtn.classList.contains('active')) {
+    if (isDisliked) {
 
         dislikeBtn.classList.remove('active');
         dislikeCount--;
+        isDisliked = false;
     } else {
 
         dislikeBtn.classList.add('active');
         likeBtn.classList.remove('active');
-        dislikeCount++;
-        if (likeCount > 0) {
+        if (isLiked) {
             likeCount--;
+            isLiked = false;
         }
+        dislikeCount++;
+        isDisliked = true;
     }
 
-    likeCountSpan.textContent = dislikeCount;
+    likeCountSpan.textContent = likeCount;
     dislikeCountSpan.textContent = dislikeCount;
 });
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const menuBar = document.getElementById('menu-bar');
     const navbar = document.getElementById('navbar');
 
-    menuBar.addEventListener('click', function() {
+    menuBar.addEventListener('click', function () {
         navbar.classList.toggle('active');
     });
 });

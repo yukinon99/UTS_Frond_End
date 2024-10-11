@@ -486,12 +486,12 @@ button.dislike-btn.active {
 }
 
 #menu-bar {
-    display: none; /* Sembunyikan secara default */
+    display: none;
 }
 
 @media (max-width: 555px) {
     #menu-bar {
-        display: block; /* Tampilkan saat lebar layar 555px atau kurang */
+        display: block;
         cursor: pointer;
         color: #ffffff;
     }
@@ -507,22 +507,71 @@ button.dislike-btn.active {
         z-index: 1000;
     }
 
-    #navbar.active {
-        display: flex;
+    button.like-btn,
+    button.dislike-btn {
+        background-color: transparent;
+        border: none;
+        color: #333;
+        font-size: 16px;
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        padding: 10px;
+        transition: color 0.3s ease;
     }
 
-    #navbar li {
-        list-style: none;
-        padding: 10px 20px;
-        position: relative;
+    button.like-btn i,
+    button.dislike-btn i {
+        font-size: 20px;
     }
-    
-    #navbar li a {
-        text-decoration: none;
+
+    button.like-btn:hover {
+        color: #FF7200;
+    }
+
+
+    button.dislike-btn:hover {
+        color: red;
+    }
+
+
+    button.like-btn.active {
+        color: #FF7200;
+    }
+
+
+    button.dislike-btn.active {
+        color: red;
+    }
+
+
+    .like-count,
+    .dislike-count {
+        font-size: 14px;
+        margin-left: 5px;
+        color: #333;
+    }
+
+    .like-btn,
+    .dislike-btn {
+        padding: 10px;
+        margin-right: 10px;
+        cursor: pointer;
+        background-color: #f0f0f0;
+        border: none;
         font-size: 16px;
-        font-weight: 600;
-        color: #ffffff;
-        transition: 0.3s ease;
-        display: block;
     }
+
+
+    .like-btn.active {
+        background-color: green;
+        color: white;
+    }
+
+    .dislike-btn.active {
+        background-color: red;
+        color: white;
+    }
+
 }
