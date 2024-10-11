@@ -71,11 +71,9 @@ window.onload = function() {
 };
 
 function resetTimeAnimation() {
-    // Logika untuk mereset animasi waktu
     console.log('Resetting time animation');
 }
 
-// Tambahkan event listener untuk panah di section hero
 document.getElementById('hero-arrow').addEventListener('click', function() {    
     document.getElementById('slider').scrollIntoView({ behavior: 'smooth' });
 });

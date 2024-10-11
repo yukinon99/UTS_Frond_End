@@ -153,3 +153,12 @@ function openModal() {
     // Contoh:
     console.log('Modal opened');
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    const menuBar = document.getElementById('menu-bar');
+    const navbar = document.getElementById('navbar');
+
+    menuBar.addEventListener('click', function() {
+        navbar.classList.toggle('active');
+    });
+});
